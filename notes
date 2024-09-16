@@ -1,0 +1,7 @@
+Node {
+	name
+}
+
+Button : Node {
+	button_text
+}

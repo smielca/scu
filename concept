@@ -1,0 +1,21 @@
+Button : Node {
+	button_text
+}
+
+MainMenu : Scene {
+	buttons
+}
+
+main() {
+	app = new App("game")
+	menu = new MainMenu()
+
+	button = new Button()
+	button.setText("test")
+	button.setPosition(3, 6)
+
+	menu.addButton(button)
+
+	app.setScene(menu)
+	app.run()
+}
